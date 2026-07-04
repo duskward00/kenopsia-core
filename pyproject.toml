@@ -1,0 +1,12 @@
+[project]
+name = "kenopsia-core"
+version = "0.1.0"
+description = "Professional Linux System Assessment Platform"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Erik Chubb" }]
+license = "MIT"
+dependencies = ["jinja2", "psutil", "distro", "py-cpuinfo", "rich", "tabulate", "beautifulsoup4"]
+
+[project.scripts]
+kenopsia = "kenopsia.cli:main"
