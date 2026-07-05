@@ -1,1 +1,3 @@
-from .version import __version__, PRODUCT_NAME, TAGLINE
+"""Kenopsia Core package metadata."""
+
+__version__ = "0.2.1"

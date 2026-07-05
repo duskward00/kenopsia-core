@@ -1,16 +1,18 @@
 # Roadmap
 
-## v0.2.0
-- Improve SMART attribute parsing into curated disk cards.
-- Add USB and PCI device classification.
-- Add Markdown export.
-- Add command-line options for output format.
+## Sprint 1
 
-## v0.3.0
-- Add historical diff: what changed since last scan.
-- Add Docker and Podman collectors.
-- Add libvirt/KVM collector.
+### Milestone 1 — Project Foundation
+Completed project identity and documentation foundation.
 
-## v0.4.0
-- Add remote SSH scanning.
-- Add multi-host dashboard.
+### Milestone 2 — Assessment Framework Foundation
+Introduces normalized inventory, findings, recommendations, scoring, and rule registry.
+
+### Milestone 3 — Collector Normalization
+Adapt existing collectors into the normalized inventory model.
+
+### Milestone 4 — Runtime Integration
+Connect the new assessment engine to the CLI and report renderers.
+
+### Milestone 5 — QA and Release Candidate
+Expand tests, validate reports, and prepare the official v0.2.2 release package.

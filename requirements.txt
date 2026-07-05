@@ -1,7 +1,1 @@
-jinja2
-psutil
-distro
-py-cpuinfo
-rich
-tabulate
-beautifulsoup4
+pytest>=8.0.0

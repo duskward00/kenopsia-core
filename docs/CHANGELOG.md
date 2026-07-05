@@ -1,13 +1,24 @@
 # Changelog
 
-## v0.1.0
+## v0.2.2 Sprint 1 / Milestone 2
 
-Initial Kenopsia Core release candidate.
+### Added
 
-- Renamed project from prototype Linux Advisor concept to Kenopsia Core.
-- Added modern Python project structure.
-- Added `kenopsia.py` entry point and `kenopsia/` application package.
-- Added collector modules for system, hardware, memory, networking, services, security, storage, and Fedora intelligence.
-- Added HTML and JSON report generation.
-- Added local scan history snapshots.
-- Added findings, recommendations, risk counts, and health scoring.
+- New `kenopsia.assessment` package
+- Normalized inventory model
+- Finding model with severity weighting
+- Recommendation model
+- Rule registry
+- Assessment engine
+- Category scoring
+- Initial storage rules
+- Initial security rules
+- Tests for assessment framework behavior
+
+### Fixed by Design
+
+- Storage assessment now ignores `efivarfs`, preventing false positives on `/sys/firmware/efi/efivars`.
+
+### Notes
+
+This milestone adds the future assessment framework beside the current v0.1.0 runtime. Integration into the main CLI and report pipeline will occur in later milestones.

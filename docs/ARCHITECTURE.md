@@ -1,8 +1,32 @@
-# Architecture
+# Kenopsia Core Architecture
 
-Kenopsia Core has four primary layers:
+## Vision
 
-1. Collectors gather structured data.
-2. The engine runs collectors and merges findings.
-3. Scoring converts collector health into an overall assessment.
-4. The report renderer produces HTML, JSON, and history snapshots.
+Kenopsia Core separates data collection from assessment.
+
+    Linux Host
+        │
+    Collectors
+        │
+    Normalized Inventory
+        │
+    Assessment Engine
+        │
+    Rule Engine
+        │
+    Finding Engine
+        │
+    Recommendation Engine
+        │
+    Scoring Engine
+        │
+    Renderers (HTML / JSON / Markdown)
+
+## Design Principles
+
+-   Collect once, assess many times.
+-   Collectors never make judgments.
+-   Rules produce findings.
+-   Findings produce recommendations.
+-   Scores are derived from evidence.
+-   Every assessment is explainable and traceable.

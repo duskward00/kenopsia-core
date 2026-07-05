@@ -1,13 +1,19 @@
 # Changelog
 
-## v0.1.0
+## v0.2.1 - 2026-07-04
 
-Initial Kenopsia Core release candidate.
+### Fixed
 
-- Renamed project from prototype Linux Advisor concept to Kenopsia Core.
-- Added modern Python project structure.
-- Added `kenopsia.py` entry point and `kenopsia/` application package.
-- Added collector modules for system, hardware, memory, networking, services, security, storage, and Fedora intelligence.
-- Added HTML and JSON report generation.
-- Added local scan history snapshots.
-- Added findings, recommendations, risk counts, and health scoring.
+- Made the SSH security collector tolerant of unreadable `/etc/ssh/sshd_config`.
+- Collector now reports SSH config permission status instead of aborting the full assessment run.
+- Added regression coverage for permission-denied SSH config reads.
+
+## v0.2.0 - 2026-07-04
+
+### Added
+
+- Assessment engine foundation.
+- Storage collector.
+- Security posture collector.
+- JSON, Markdown, and HTML assessment outputs.
+- v0.2.0 documentation and validation scripts.

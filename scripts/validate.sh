@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd "$(dirname "$0")/.."
-python -m py_compile kenopsia.py kenopsia/*.py collectors/*.py
-echo "Validation passed."
+export PYTHONPATH="${PWD}:${PYTHONPATH:-}"
+python -m compileall kenopsia scripts tests
+python -m pytest -q
+python -m kenopsia.cli --version
