@@ -1,17 +1,17 @@
 # Changelog
 
-## v0.2.2 Sprint 1 / Milestone 3
+## v0.2.2 Sprint 1 / Milestone 4
 
 ### Added
 
-- Normalization package
-- Legacy payload to Inventory adapter
-- Storage normalization
-- Security normalization
-- Services normalization
-- Failed service assessment rule
-- Tests for normalization behavior
+- Normalized runtime runner
+- Default rule registry helper
+- Normalized JSON renderer
+- Normalized Markdown renderer
+- Normalized HTML renderer
+- `scripts/run_normalized_assessment.py`
+- Runtime integration tests
 
 ### Notes
 
-The current CLI remains on the legacy runtime. Milestone 4 will connect the normalized inventory pipeline to the runtime path.
+The existing CLI remains on the compatibility path. Final cutover is planned for Milestone 5.
